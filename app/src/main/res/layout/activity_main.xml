@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_word"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入要查询的单词" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edit_word"
+        android:text="查询"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_word"
+        android:text="单词"
+        android:textSize="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_phonetic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_word"
+        android:text="音标"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phonetic"
+        android:text="翻译"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>
